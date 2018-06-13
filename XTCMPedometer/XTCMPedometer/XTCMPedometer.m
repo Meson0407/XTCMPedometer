@@ -68,7 +68,7 @@ XTCMPedometer *manager = nil;
  */
 - (void)getTodayStepsData:(CMPedometer *)pedometer success:(void(^)(id responseObject))success{
     
-    if ([CMPedometer isStepCountingAvailable]) {
+    if ([CMPedometer isStepCountingAvailable]) {// 判断能否计步
      
         NSDate *startOfToday = [[NSCalendar currentCalendar] startOfDayForDate:[NSDate date]];
         
